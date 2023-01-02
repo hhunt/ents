@@ -1,4 +1,4 @@
-package com.example;
+package org.entsexample;
 
 import com.google.inject.Provides;
 import javax.inject.Inject;
@@ -14,7 +14,7 @@ import net.runelite.client.plugins.PluginDescriptor;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Example"
+	name = "Exgggample"
 )
 public class ExamplePlugin extends Plugin
 {
@@ -27,13 +27,13 @@ public class ExamplePlugin extends Plugin
 	@Override
 	protected void startUp() throws Exception
 	{
-		log.info("Example started!");
+		log.info("Exgggample started!");
 	}
 
 	@Override
 	protected void shutDown() throws Exception
 	{
-		log.info("Example stopped!");
+		log.info("Exgggample stopped!");
 	}
 
 	@Subscribe
@@ -41,7 +41,7 @@ public class ExamplePlugin extends Plugin
 	{
 		if (gameStateChanged.getGameState() == GameState.LOGGED_IN)
 		{
-			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Example says " + config.greeting(), null);
+			client.addChatMessage(ChatMessageType.GAMEMESSAGE, "", "Exgggample says " + config.greeting(), null);
 		}
 	}
 
